@@ -19,6 +19,7 @@ const Video = (props) => {
                         <Typography style={{ fontWeight : "bolder", fontSize : "25px" }}>
                             {video.name}
                         </Typography>
+                        <hr/>
                         <p>What will I learn?</p><p>{video.description}</p>
                         <Button variant="contained"><a href={video.url} style={{ color : "black", textDecoration : "none" }} target="_blank">Check it out</a></Button>
                     </CardContent>

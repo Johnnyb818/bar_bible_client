@@ -37,6 +37,7 @@ const Tool = (props) => {
                         <Typography gutterBottom variant="h5" component="h3" style={{ fontWeight : "bolder", fontSize : "25px" }}>
                             {tool.name}
                         </Typography>
+                        <hr/>
                         <p>{tool.description}</p>
                         <h3>{tool.price}</h3>
                         <Button variant="contained"><a href={tool.url} style={{ color : "black", textDecoration : "none" }} target="_blank" className="button">Buy</a></Button>
