@@ -1,11 +1,8 @@
 import React from "react";
-import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import Container from '@material-ui/core/Container';
 
 const Syrup = (props) => {
 
@@ -13,16 +10,20 @@ const Syrup = (props) => {
 
     const loadSyrup = () => (
         
-        <div>
+        <Container maxWidth="sm" style={{ padding : "3%" }}>
             {syrup.map((syrup) => (
-                <div>           
-                    <h1>{syrup.name}</h1>
-                    <p>{syrup.description}</p>
-                    <p>{syrup.description2}</p>
-                    <p>{syrup.description3}</p>
-                </div>
+                <Card style={{ margin : "30px"}}>
+                    <CardContent>
+                        <Typography style={{ fontWeight : "bolder", fontSize : "25px" }}>
+                            {syrup.name}
+                        </Typography>
+                        <p>{syrup.description}</p>
+                        <p>{syrup.description2}</p>
+                        <p>{syrup.description3}</p>
+                    </CardContent>           
+                </Card>
             ))}
-        </div>
+        </Container>
     )
     const loading = <h1>Loading...</h1>
     return syrup.length > 0 ? loadSyrup() : loading  

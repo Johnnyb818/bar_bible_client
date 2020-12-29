@@ -67,30 +67,7 @@ function App() {
   return (
     <div>
       <NavBar/>    
-        <nav>
-          <div>
-            {/* <a>Bar Bible</a>
-                <Link to="/">
-                <a>Home</a>
-                </Link>
-
-                <Link to="/drinks">
-                  <a>Cocktail Recipes</a>
-                </Link>
-
-                <Link to="/syrups">
-                  <a>Syrup Recipes</a>
-                </Link>
-
-                <Link to="/tools">
-                  <a>Bar Gear</a>
-                </Link>
-
-                <Link to="/videos">
-                  <a>Tutorials</a>
-                </Link> */}
-          </div>
-        </nav>          
+          
       <main>
         <Switch>
           <Route exact path="/" render={(rp) => <Home/>} />

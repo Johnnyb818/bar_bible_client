@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     paper: {
       padding: '0 9%',
       textAlign: 'center',
-      color: 'white',
+      color: 'black',
       textDecoration: 'none',
       fontSize: '27px',       
     },
@@ -21,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: 'auto',
       alignItems: 'center',
       marginTop: '10px', 
+      
     }
   }));
 
@@ -36,12 +37,12 @@ function NavBar() {
 
     return (
         <div>
-            <AppBar style={{ backgroundColor : 'black'}} position="static">
+            <AppBar style={{ backgroundColor : '#E79C03'}} position="static">
                 <Toolbar>
-                    <IconButton onClick={handleDrawer} edge="start" color="inherit" aria-label="menu">
+                    <IconButton style={{color : "black"}} onClick={handleDrawer} edge="start" color="inherit" aria-label="menu">
                         <Menu />
                     </IconButton>
-                    <Typography variant="h6">
+                    <Typography style={{color : "black"}} variant="h6">
                         Bar Bible
                     </Typography>
                 </Toolbar>
@@ -52,7 +53,7 @@ function NavBar() {
                 open={open}
                 onClose={() => setOpen(false)}
             >
-                <div style={{ height : "100%", width : "260px", backgroundColor : "#000" }}>
+                <div style={{ height : "100%", width : "260px", backgroundColor : "#E79C03" }}>
                 <Grid className={classes.navGrid}>
                     <Link className={classes.paper} to="/"><a>Home</a></Link>
                 </Grid>

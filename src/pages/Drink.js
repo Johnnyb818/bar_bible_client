@@ -40,7 +40,7 @@ const Drink = (props) => {
                                     image={drink.img}
                                 />
                                 <CardContent>
-                                    <Typography gutterBottom variant="h5" component="h3">
+                                    <Typography gutterBottom variant="h5" component="h3" style={{ fontWeight : "bolder", fontSize : "25px" }}>
                                         {drink.name}
                                     </Typography>                               
                                     <p>{drink.spirit}</p>
