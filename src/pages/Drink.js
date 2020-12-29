@@ -18,7 +18,7 @@ const Drink = (props) => {
           margin: "4%",         
         },
         media: {
-          height: 200,
+          height: 250,
         },
       });
 
